@@ -1,0 +1,186 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #003366, #005f99, #00aaff); /* Gradiente de azul oscuro a celeste */
+    color: #ffffff; /* Texto en blanco para un buen contraste */
+    text-align: center;
+    padding: 20px 10px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra sutil para darle profundidad */
+}
+
+
+header img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+header p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Navegacion */
+nav {
+    background-color: #0055a5;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #ffffff; /* Color inicial del texto */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    display: inline-block; /* Asegura que el fondo se ajuste al texto */
+    padding: 10px 15px; /* Espaciado alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados para el cuadro (opcional) */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+nav a:hover {
+    background-color: #d3f016; /* Color del fondo al pasar el cursor */
+    color: #000000; /* Cambia el color del texto a negro */
+}
+/* Main Content */
+.principal {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+main {
+    flex: 2;
+    padding: 10px;
+}
+
+aside {
+    flex: 1;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 1px solid #cccccc;
+}
+
+aside h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+aside form label {
+    display: block;
+    margin: 5px 0;
+}
+
+aside form input,
+aside form textarea,
+aside form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Carrusel */
+.carrusel {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.carrusel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carrusel img.activo {
+    opacity: 1;
+}
+
+
+/* Secciones de Carreras */
+.principal_carreras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo suave */
+}
+
+.principal_carreras section {
+    background: #ffffff; /* Fondo blanco para las tarjetas */
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    width: 80%; /* Ancho controlado */
+    max-width: 800px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.principal_carreras section:hover {
+    transform: translateY(-5px); /* Efecto elevación */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.principal_carreras img {
+    width: 100%; /* Imágenes responsivas */
+    height: auto;
+    border-radius: 10px 10px 0 0; /* Redondea solo la parte superior */
+}
+
+.principal_carreras h2 {
+    color: #003366; /* Azul oscuro profesional */
+    margin-top: 15px;
+}
+
+.principal_carreras p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.principal_carreras a {
+    display: inline-block;
+    background-color: #0055a5; /* Azul principal */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.principal_carreras a:hover {
+    background-color: #ffcc00; /* Amarillo de contraste */
+    color: #000000; /* Texto negro */
+}
